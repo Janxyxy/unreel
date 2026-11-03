@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/logo_tile"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagline"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Service status -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardLabel"
+                android:text="@string/service_title" />
+
+            <TextView
+                android:id="@+id/service_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Hint"
+                android:text="@string/service_hint" />
+
+            <Button
+                android:id="@+id/service_button"
+                style="@style/PrimaryButton"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- Blocking options -->
+        <LinearLayout style="@style/Card">
+
+            <Switch
+                android:id="@+id/sw_enabled"
+                style="@style/Toggle"
+                android:text="@string/opt_enabled"
+                android:textStyle="bold" />
+
+            <View style="@style/Divider" />
+
+            <Switch
+                android:id="@+id/sw_tab"
+                style="@style/Toggle"
+                android:text="@string/opt_tab" />
+
+            <Switch
+                android:id="@+id/sw_viewer"
+                style="@style/Toggle"
+                android:text="@string/opt_viewer" />
+
+            <Switch
+                android:id="@+id/sw_dm"
+                style="@style/Toggle"
+                android:text="@string/opt_dm" />
+
+            <TextView
+                style="@style/Hint"
+                android:layout_marginTop="0dp"
+                android:text="@string/opt_dm_hint" />
+        </LinearLayout>
+
+        <!-- Pause -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardLabel"
+                android:text="@string/pause_title" />
+
+            <TextView
+                android:id="@+id/pause_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/accent"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/pause_button"
+                style="@style/SecondaryButton"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Stats -->
+        <LinearLayout
+            style="@style/Card"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stat_today"
+                    style="@style/StatNumber" />
+
+                <TextView
+                    style="@style/CardLabel"
+                    android:text="@string/stat_today" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stat_total"
+                    style="@style/StatNumber" />
+
+                <TextView
+                    style="@style/CardLabel"
+                    android:text="@string/stat_total" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Hint"
+            android:layout_marginTop="4dp"
+            android:paddingHorizontal="4dp"
+            android:text="@string/restricted_hint" />
+    </LinearLayout>
+</ScrollView>

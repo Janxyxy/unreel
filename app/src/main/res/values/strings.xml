@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unreel</string>
+    <string name="tagline">Instagram, minus the Reels</string>
+
+    <string name="service_label">Unreel Reels blocker</string>
+    <string name="service_description">Unreel watches Instagram only and backs out when you open Reels. It does not read or store anything else.</string>
+
+    <string name="service_title">ACCESSIBILITY SERVICE</string>
+    <string name="service_on">Running</string>
+    <string name="service_off">Not enabled</string>
+    <string name="service_hint">Unreel needs accessibility access to see when Instagram opens Reels. It only watches Instagram.</string>
+    <string name="service_enable">Enable in settings</string>
+    <string name="service_manage">Accessibility settings</string>
+
+    <string name="opt_enabled">Blocking on</string>
+    <string name="opt_tab">Block the Reels tab</string>
+    <string name="opt_viewer">Block reels opened from feed, Explore and profiles</string>
+    <string name="opt_dm">Allow reels sent in DMs</string>
+    <string name="opt_dm_hint">Only the reel someone sent you plays. Swiping on to more reels is still blocked.</string>
+
+    <string name="pause_title">TAKE A BREAK FROM BLOCKING</string>
+    <string name="pause">Pause for 5 minutes</string>
+    <string name="resume">Resume blocking now</string>
+    <string name="paused_until">Paused until %1$s</string>
+
+    <string name="stat_today">BLOCKED TODAY</string>
+    <string name="stat_total">BLOCKED TOTAL</string>
+
+    <string name="restricted_hint">Can\'t turn the service on? On Android 13+ open App info for Unreel, tap ⋮ → Allow restricted settings, then try again.</string>
+    <string name="toast_blocked">Reel blocked</string>
+</resources>
