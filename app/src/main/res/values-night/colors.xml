@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg">#0F0C1D</color>
-    <color name="card">#1C1830</color>
-    <color name="text">#F1EFF8</color>
-    <color name="text_muted">#A19DB8</color>
-    <color name="divider">#2C2745</color>
-    <color name="secondary_btn">#2A2543</color>
-    <color name="ok">#3DD598</color>
+    <color name="bg">#121212</color>
+    <color name="text">#EDEDED</color>
+    <color name="text_muted">#9A9A9A</color>
+    <color name="divider">#262626</color>
+    <color name="accent">#EDEDED</color>
+    <color name="on_accent">#121212</color>
+    <color name="ok">#66BB6A</color>
+    <color name="warn">#EF5350</color>
 </resources>

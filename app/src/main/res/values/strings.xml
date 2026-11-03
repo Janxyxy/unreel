@@ -6,27 +6,34 @@
     <string name="service_label">Unreel Reels blocker</string>
     <string name="service_description">Unreel watches Instagram only and backs out when you open Reels. It does not read or store anything else.</string>
 
-    <string name="service_title">ACCESSIBILITY SERVICE</string>
     <string name="service_on">Running</string>
-    <string name="service_off">Not enabled</string>
-    <string name="service_hint">Unreel needs accessibility access to see when Instagram opens Reels. It only watches Instagram.</string>
-    <string name="service_enable">Enable in settings</string>
-    <string name="service_manage">Accessibility settings</string>
+    <string name="service_off">Not running</string>
+    <string name="service_hint_on">Watching Instagram for Reels</string>
+    <string name="service_hint_off">Turn on Unreel in accessibility settings. It only looks at Instagram.</string>
+    <string name="service_enable">Turn on</string>
 
-    <string name="opt_enabled">Blocking on</string>
-    <string name="opt_tab">Block the Reels tab</string>
-    <string name="opt_viewer">Block reels opened from feed, Explore and profiles</string>
-    <string name="opt_dm">Allow reels sent in DMs</string>
-    <string name="opt_dm_hint">Only the reel someone sent you plays. Swiping on to more reels is still blocked.</string>
+    <string name="section_blocking">Blocking</string>
+    <string name="opt_enabled">Block Reels</string>
+    <string name="opt_tab">Reels tab</string>
+    <string name="opt_tab_hint">Sends you back to Home</string>
+    <string name="opt_viewer">Reels in feed and Explore</string>
+    <string name="opt_viewer_hint">Also profiles and search</string>
+    <string name="opt_dm">Allow reels from DMs</string>
+    <string name="opt_dm_hint">The reel you were sent plays, swiping to the next one doesn\'t</string>
 
-    <string name="pause_title">TAKE A BREAK FROM BLOCKING</string>
     <string name="pause">Pause for 5 minutes</string>
-    <string name="resume">Resume blocking now</string>
+    <string name="pause_hint">Blocking turns back on by itself</string>
+    <string name="resume">Resume now</string>
     <string name="paused_until">Paused until %1$s</string>
 
-    <string name="stat_today">BLOCKED TODAY</string>
-    <string name="stat_total">BLOCKED TOTAL</string>
+    <string name="section_stats">Blocked</string>
+    <string name="stat_today">Today</string>
+    <string name="stat_total">All time</string>
 
-    <string name="restricted_hint">Can\'t turn the service on? On Android 13+ open App info for Unreel, tap ⋮ → Allow restricted settings, then try again.</string>
+    <string name="section_about">About</string>
+    <string name="github">Source code on GitHub</string>
+    <string name="github_url" translatable="false">github.com/Janxyxy/unreel</string>
+
+    <string name="restricted_hint">Can\'t turn it on? On Android 13+ open App info for Unreel, tap ⋮ and choose Allow restricted settings.</string>
     <string name="toast_blocked">Reel blocked</string>
 </resources>
