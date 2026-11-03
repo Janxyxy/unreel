@@ -29,15 +29,19 @@ It only looks at Instagram. It doesn't read your messages or send anything anywh
 
 ## Install
 
-There's no Play Store release. Build it yourself:
+Download the APK from [Releases](https://github.com/Janxyxy/unreel/releases/latest) and install it. Your phone will ask you to allow installing apps from your browser or file manager.
+
+Open Unreel, tap **Turn on** and enable Unreel in the accessibility settings.
+
+On Android 13 and newer, apps installed from an APK can't get accessibility access straight away. Open App info for Unreel, tap ⋮, choose **Allow restricted settings**, then try again.
+
+## Building
 
 ```
 ./gradlew assembleDebug
 ```
 
-The APK ends up in `app/build/outputs/apk/debug/`. Install it, open Unreel, tap **Turn on** and enable Unreel in the accessibility settings.
-
-On Android 13 and newer, apps installed from an APK can't get accessibility access straight away. Open App info for Unreel, tap ⋮, choose **Allow restricted settings**, then try again.
+The APK ends up in `app/build/outputs/apk/debug/`.
 
 ## If it stops working
 
